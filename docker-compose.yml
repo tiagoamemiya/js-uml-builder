@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    image: node:alpine
+    container_name: uml-builder
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 3336:3336
+    command: sh -c "npm install && npm run dev"

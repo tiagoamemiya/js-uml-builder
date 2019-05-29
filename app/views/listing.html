@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UML BUILDER - {{ title }}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/static/style.css'>
+</head>
+<body>
+    <div class="project-info">
+        <h2>{{ title }}</h2>
+        <p>Listagem de Aplicações/Projetos para visualização de Diagramas UML.</p>
+        <p>Para criar um novo diagrama, utilize o arquivo <code>"app/schemas/sample.js"</code> como exemplo.</p> 
+        <p>Você pode consultar também a documentação da lib nomnoml <a href="http://www.nomnoml.com/" target="_blank">aqui</a>.</p>
+    </div>
+    <div class="project-schema">
+        <ul>
+            {{#items}}
+            <li><a href="/projects/{{name}}">{{name}}</a></li>
+            {{/items}}
+        </ul>
+    </div>
+</body>
+</html>

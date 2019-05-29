@@ -1,0 +1,25 @@
+{
+  "name": "uml-builder",
+  "version": "1.0.0",
+  "description": "App para criação de diagramas UML",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "uml"
+  ],
+  "author": "Tiago Amemiya",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "helmet": "^3.18.0",
+    "mustache-express": "^1.2.8",
+    "nomnoml": "^0.5.0"
+  }
+}
